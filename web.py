@@ -9,8 +9,8 @@ def add_todo():
 todos = function.get_todos()
 
 st.title("My To-do App")
-st.subheader('This is my to-do wwapp.')
-st.write('This app is my to-do app.')
+st.subheader('This is my to-do app.')
+st.write('Please write down what you plan to do today.')
 for index, choice in enumerate(todos):
     checkbox = st.checkbox(choice,key= choice)
     if checkbox:
